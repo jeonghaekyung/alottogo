@@ -580,7 +580,7 @@
     text-align: center;
   }
   #footer .footer_inner .sns_bottom{
-    margin: 0 auto 16px;
+    margin: 0 auto 18px;
   }
   #footer .footer_inner .company_info{  
     font-size: 1.4rem;
@@ -593,6 +593,7 @@
 /*breakpoint 360*/
 @media screen and (max-width: 360px){
   #container .signature_menu .menu_list ul li img{
-    height: 255px;
+    padding: 0;
+    height: 250px;
   }
 }
