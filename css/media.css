@@ -168,8 +168,7 @@
     flex-direction: column;
   }
   #container .signature_menu .menu_list{
-    padding: 40px 20px 100px;   
-    word-break: keep-all;
+    padding: 40px 20px 100px;
   }
   #container .signature_menu .right_area{
     order: 1;
@@ -185,7 +184,7 @@
   }
   #container .signature_menu .right_area .txt{
     position: static;
-    min-width: 1200px;
+    width: 100%;
     padding: 130px 0 0;
     white-space: nowrap;   
   }
@@ -389,7 +388,7 @@
     font-size: 1.7rem;
     font-weight: 400;
     color: #666;
-  }
+  }  
 }
 /*breakpoint 768*/
 @media screen and (max-width: 768px){   
@@ -429,9 +428,12 @@
   #container .news_area .news_list{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     padding: 0 120px;
     row-gap: 20px;
+  }
+  #container .news_area .news_list img{
+    margin: 0 auto;
+    width: 444px;
   }
   #container .brand_concept{
     padding: 90px 20px;
@@ -551,6 +553,11 @@
     padding: 0 40px;
     row-gap: 20px;
   }
+  #container .news_area .news_list img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
   #container .brand_concept{
     padding: 60px 40px;
   }
@@ -593,7 +600,7 @@
 /*breakpoint 360*/
 @media screen and (max-width: 360px){
   #container .signature_menu .menu_list ul li img{
-    padding: 0;
+    padding: 1px;
     height: 250px;
   }
 }
