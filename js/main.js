@@ -19,7 +19,7 @@ var mainVisul = new Swiper(".main_visual", {
 //시그니처메뉴 배너 슬라이드
 const menuList = new Swiper('.menu_list', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
   centeredSlides: true,
@@ -28,30 +28,9 @@ const menuList = new Swiper('.menu_list', {
     prevEl: '.swiper-button-prev'
   },
   breakpoints: {
-    1440: {
-      slidesPerView: 3,
-      centeredSlides: true
-    },
     1200: {
       slidesPerView: 3,
       centeredSlides: true
-    },
-    960: {
-      slidesPerView: 1,
-      centeredSlides: true
-    },
-    768: {
-      slidesPerView: 1,
-      centeredSlides: true
-    },
-    480: {
-      slidesPerView: 1,
-      centeredSlides: true
-    },
-    360: {
-      slidesPerView: 1,
-      centeredSlides: true
-    }
-    
+    }    
   }
 });

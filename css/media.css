@@ -55,10 +55,7 @@
     min-width: auto;
   }
   #header {
-    padding: 40px 90px;
-  }
-  #header .header_inner #gnb{
-    padding: 0 90px;
+    padding: 36px 60px;
   }
   #container .main_visual .txt_box>h2{  
     font-size: 6.4rem;  
@@ -79,14 +76,14 @@
     line-height: 20px;
   }
   #container .signature_menu .menu_list{
-    padding: 0 24px 0 20px;   
+    padding: 0 22px 0 22px;   
     word-break: keep-all;
   }
   #container .signature_menu .menu_list ul li img{    
-    height: 260px;
+    width: 70%;
   }
   #container .signature_menu .menu_list ul li.swiper-slide-next img{
-    height: 345px;
+    width: 100%;
   }
   #container .signature_menu .menu_list ul li.swiper-slide-next b{
     padding-top: 32px;
@@ -130,9 +127,12 @@
 @media screen and (max-width: 1200px){
   #header {
     padding: 36px 40px;
-  }  
+  }
+  #header .header_inner #gnb{
+    padding: 0;
+  } 
   #header .header_inner #gnb > ul > li > a{  
-    padding: 8px 30px;
+    padding: 8px 24px;
   }
   #header .header_inner #gnb > ul > li::after{
     content: "";
@@ -163,13 +163,13 @@
     opacity: 1;
     visibility: visible;
   }
+  #container .main_visual .txt_box{
+    top: 34%;
+  }
   #container .signature_menu{
     display: flex;
     flex-direction: column;
-  }
-  #container .signature_menu .menu_list{
-    padding: 40px 20px 100px;
-  }
+  }  
   #container .signature_menu .right_area{
     order: 1;
   }
@@ -182,11 +182,15 @@
   #container .signature_menu .right_area .onlyPC{
     display: none;
   }
+  #container .signature_menu .right_area{
+    width: 100%;
+  }
   #container .signature_menu .right_area .txt{
     position: static;
     width: 100%;
-    padding: 130px 0 0;
-    white-space: nowrap;   
+    padding: 110px 0 0;
+    text-align: center;
+    white-space: nowrap;
   }
   #container .signature_menu .right_area .txt h3{    
     font-size: 5.0rem;
@@ -195,17 +199,21 @@
   }
   #container .signature_menu .right_area .txt p{
     margin: 20px 0;
-    padding-left: 4px;
     font-size: 2.4rem;
     color: #333
   }
+  #container .signature_menu .menu_list{
+    padding: 20px 0 60px 0;
+  }
+  #container .signature_menu .menu_list ul{
+    align-items: center;
+  }
   #container .signature_menu .menu_list ul li img{
     padding-bottom: 40px;
-    height: 230px;
+    width: 70%;
   }
   #container .signature_menu .menu_list ul li.swiper-slide-next img{
-    margin-left: -16px;
-    height: 300px;
+    width: 100%;
   }
   #container .signature_menu .menu_list ul li.swiper-slide-next b{
     padding-top: 22px;
@@ -216,6 +224,16 @@
   }
   #container .signature_menu .menu_list ul li.swiper-slide-next p{
     font-size: 1.6rem;
+  }
+  #container .signature_menu .menu_list .swiper-button-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  #container .signature_menu .menu_list .swiper-button-next{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
   }
   #container .signature_menu .menu_list b{
     font-size: 2.0rem;
@@ -229,7 +247,7 @@
   }
   #container .news_area{
     width: 100%;
-    padding: 120px 0 140px;
+    padding: 120px 24px 140px;
   }
   #container .news_area p{
     margin: 16px 0 50px;
@@ -265,9 +283,8 @@
   #header .header_inner #gnb{
     display: none;
   }
-  #header .header_inner .sns_area ul{
-    padding-right: 40px;
-    column-gap: 5px;
+  #header .header_inner .sns_area{
+    display: none;
   }   
   #header .header_inner .btn_hamburger{
     position: absolute;
@@ -290,7 +307,7 @@
   #header .header_inner .btn_hamburger span{
     width: 100%;
     height: 2px;
-    background-color: #23503C;
+    background-color: #665140;
     transition: 0.3s;
   }
   #header .btn_hamburger.open span:first-child {
@@ -310,7 +327,7 @@
     top: 0;
     right: 0;
     z-index: 200;
-    width: 60%;
+    width: 85%;
     height: 100vh;
     padding: 60px 50px;
     background-color: #665140;
@@ -340,60 +357,54 @@
     font-weight: 300;
     text-align: left;
   }
-  #container .main_visual .txt_box{
-    top: 26%;    
+  #container .main_visual .swiper-slide img{
+    height: 60vh;
   }
   #container .main_visual > .arrow_box{
     top: 80.5%;
     right: 8%;
   }
   #container .signature_menu .right_area .txt{
-    margin-left: -46px;
-    padding-top: 90px;  
+    padding: 80px 0 0;
   }
   #container .signature_menu .right_area .txt p{
     margin: 10px 0;
   }
   #container .signature_menu .menu_list{
-    padding: 10px 0 65px;
+    padding: 10px 0 65px 0;
+  }
+  #container .signature_menu .menu_list ul{
+    align-items: stretch;
   }
   #container .signature_menu .menu_list ul li img {
     padding: 20px;
-    height: 360px;
-  }
-  #container .signature_menu .menu_list .swiper-button-prev{
-    position: absolute;
-    top: 35%;
-    left: 5%;
-  }
-  #container .signature_menu .menu_list .swiper-button-next{
-    position: absolute;
-    top: 35%;
-    right: 5%;
+  }  
+  #container .signature_menu .menu_list ul li.swiper-slide-next img{
+    width: 70%;
   }
   #container .signature_menu .menu_list b{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: #E93804;
   }
   #container .signature_menu .menu_list i{
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #E93804;
     line-height: 24px;
   }
   #container .signature_menu .menu_list p{
     padding-top: 16px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #666;
   }  
 }
 /*breakpoint 768*/
-@media screen and (max-width: 768px){   
-  #container .main_visual .txt_box{
-    top: 33%;    
+@media screen and (max-width: 768px){
+  #container .main_visual .swiper-slide img{
+    height: 50vh;
   }
   #container .main_visual .txt_box>h2{  
     font-size: 4.5rem;  
@@ -421,14 +432,12 @@
   #container .main_visual > .arrow_box .btn_next img{
     height: 40px;
   }
-  #container .signature_menu .right_area .txt{
-    margin-left: -80px;
-    padding-top: 90px;  
+  #container .signature_menu .menu_list ul li img{
+    width: 70%;
   }
   #container .news_area .news_list{
     display: flex;
     flex-direction: column;
-    padding: 0 120px;
     row-gap: 20px;
   }
   #container .news_area .news_list img{
@@ -462,9 +471,10 @@
 /*breakpoint 480*/
 @media screen and (max-width: 480px){
   #header{
-    padding: 16px 24px;
+    padding: 16px 0;
   }
   #header .header_inner h1 img{
+    padding-left: 16px;
     width: 80%;
   }
   #header .header_inner .sns_area{
@@ -481,8 +491,8 @@
     text-align: center;
   }
   #container .main_visual .txt_box>h2{
-    padding-bottom: 8px; 
-    font-size: 3.6rem;  
+    padding-bottom: 10px; 
+    font-size: 3.8rem;  
   }
   #container .main_visual .txt_box>span{
     display: none;
@@ -490,28 +500,31 @@
   #container .main_visual .txt_box>strong{
     font-size: 2.8rem;
     font-weight: 200;
-    line-height: 30px;    
+    line-height: 32px;    
   }
   #container .main_visual .txt_box>p{
     margin-top: 8px;
     font-size: 1.2rem;
-    line-height: 16px;
+    line-height: 17px;
+  }
+  #container .signature_menu .right_area{
+    width: 100%;    
   }
   #container .signature_menu .right_area span{
     position: relative;
   }
   #container .signature_menu .right_area img{
     display: block;
-    margin-left: -154px;
-    width: 480px;
   }  
   #container .signature_menu .right_area .onlyPC{
     display: block;
   }
   #container .signature_menu .right_area .txt{
     position: absolute;
-    top: -5%;
-    left: -8%;    
+    top: 0;
+    left: 10%;
+    padding: 60px 0 0;
+    text-align: left;  
   }
   #container .signature_menu .right_area .txt>h3{
     font-size: 3.4rem;
@@ -524,20 +537,21 @@
     line-height: 30px;
     color: #fff;
   }
-  #container .signature_menu .menu_list .swiper-button-prev{
-    position: absolute;
-    top: 35%;
-    left: 5%;
-  }
-  #container .signature_menu .menu_list .swiper-button-next{
-    position: absolute;
-    top: 35%;
-    right: -6%;
+  #container .signature_menu .menu_list{
+    padding: 10px 0 40px;
   }
   #container .signature_menu .menu_list ul li img{
-    display: block;
-    margin: 0 auto;  
-    height: 330px;
+    width: 100%;
+  }
+  #container .signature_menu .menu_list b{
+    font-size: 2.2rem;
+  }
+  #container .signature_menu .menu_list i{
+   font-size: 1.2rem;
+  }
+  #container .signature_menu .menu_list p{
+    padding-top: 12px;
+    font-size: 1.4rem;
   }
   #container .news_area{
     padding: 100px 0;
@@ -546,7 +560,7 @@
     font-size: 4.0rem;
   }
   #container .news_area p{
-    margin: 10px 0 50px;
+    margin: 10px 0 40px;
     font-size: 1.8rem;
   }
   #container .news_area .news_list{
@@ -599,8 +613,32 @@
 }
 /*breakpoint 360*/
 @media screen and (max-width: 360px){
+  #container .signature_menu .right_area .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 20px 0;
+  }
+  #container .signature_menu .right_area .txt>h3{
+    font-size: 3.2rem;
+  }
+  #container .signature_menu .right_area .txt>p{
+    margin-top: 10px;
+    padding-left: 0;
+    font-size: 2.0rem;
+    line-height: 26px;
+    color: #fff;
+  }
+  #container .signature_menu .menu_list{
+    padding: 10px 0 30px;
+  }
   #container .signature_menu .menu_list ul li img{
-    padding: 1px;
-    height: 250px;
+    width: 100%;
+  }
+  #container .news_area{
+    padding: 80px 0;
+  }
+  #container .news_area .news_list{
+    padding: 0 24px;
   }
 }

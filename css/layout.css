@@ -2,7 +2,7 @@
 
 /*S-CoreDream*/
 @font-face {
-  font-family: 'S-Core Dream 1';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-1Thin.woff2') format('woff2'),
        url('../font/S-CoreDream-1Thin.woff') format('woff');
   font-weight: 100;
@@ -10,7 +10,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 2';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-2ExtraLight.woff2') format('woff2'),
        url('../font/S-CoreDream-2ExtraLight.woff') format('woff');
   font-weight: 200;
@@ -18,7 +18,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 3';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-3Light.woff2') format('woff2'),
        url('../font/S-CoreDream-3Light.woff') format('woff');
   font-weight: 300;
@@ -26,7 +26,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 4';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-4Regular.woff2') format('woff2'),
        url('../font/S-CoreDream-4Regular.woff') format('woff');
   font-weight: 200;
@@ -34,7 +34,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 5';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-5Medium.woff2') format('woff2'),
        url('../font/S-CoreDream-5Medium.woff') format('woff');
   font-weight: 500;
@@ -42,7 +42,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 6';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-6Bold.woff2') format('woff2'),
        url('../font/S-CoreDream-6Bold.woff') format('woff');
   font-weight: 600;
@@ -50,7 +50,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 7';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-7ExtraBold.woff2') format('woff2'),
        url('../font/S-CoreDream-7ExtraBold.woff') format('woff');
   font-weight: bold;
@@ -66,7 +66,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'S-Core Dream 9';
+  font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-9Black.woff2') format('woff2'),
        url('../font/S-CoreDream-9Black.woff') format('woff');
   font-weight: 900;
@@ -80,22 +80,25 @@ html{
 }
 html,
 body{
-  font-family: 'Raleway','S-CoreDream',sans-serif;
+  font-family: 'Raleway','S-Core Dream',sans-serif;
   font-size: 62.5%;
   font-weight: 300;
   color: #232323;  
 }
 #wrap{
-  min-width: 1380px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /*헤더영역*/
 #header {
-  padding: 40px 185px;
+  width: 100%;
+  padding: 40px 80px;
 }
 #header .header_inner{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1595px;
+  margin: 0 auto;
   width: 100%;
 }
 #header .header_inner h1 a{
@@ -104,11 +107,7 @@ body{
 #header .header_inner h1 img{
   display: block;
 }
-
 /*gnb*/
-#header .header_inner #gnb{
-  padding: 0 172px 0 278px;
-}
 #header .header_inner #gnb > ul{
   display: flex;
   justify-content: space-between;
@@ -197,10 +196,12 @@ body{
   display: block;
 }
 #header .header_inner .sns_area img{
-  width: 100%;
+  width: 32px;
+  height: 32px;
   line-height: 0;
 }
 /*모바일용 헤더*/
+#header .header_inner .btn_hamburger,
 #header .header_inner .mo_menu_container{
   display: none;
 }
@@ -229,7 +230,6 @@ body{
 }
 #container .main_visual .txt_box>span{
   display: block;
-  margin-right: 5px;
   font-size: 1.5rem;
   text-align: right;
   opacity: 0;
@@ -248,7 +248,8 @@ body{
 #container .main_visual .txt_box>p{
   margin-top: 16px;
   font-size: 2.0rem;
-  line-height: 28px;
+  font-weight: 200;
+  line-height: 30px;
   opacity: 0;
   word-break: keep-all;
   transition: 2s 0.8s;
@@ -292,7 +293,7 @@ body{
 #container .signature_menu .menu_list{
   position: relative;
   width: 64.2%;
-  padding: 0 45px 0 10px; 
+  padding: 0 34px 0 10px; 
 }
 #container .signature_menu .menu_list ul{
   display: flex;
@@ -301,17 +302,18 @@ body{
 #container .signature_menu .menu_list li{
   width: calc((100% - 20px)/3);
   text-align: center;
+  word-break: keep-all;
 }
 #container .signature_menu .menu_list ul li img{
   display: block;
   margin: 0 auto;
-  padding-bottom: 60px;  
-  height: 330px;
+  padding-bottom: 60px;
+  width: 70%;
 }
 #container .signature_menu .menu_list ul li.swiper-slide-next img{
   display: block;
-  margin: 0 auto;  
-  height: 460px;
+  margin: 0 auto; 
+  width: 100%;
 }
 #container .signature_menu .menu_list b{
   font-size: 2.4rem;
