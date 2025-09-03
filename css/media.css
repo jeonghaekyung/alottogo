@@ -264,7 +264,7 @@
   #container .marquee_wrapper .marquee_track img{
     height: 100px;
   }
-  #container .youtube_video{
+  #container .youtube_video video{
     margin: 0 auto 120px;
   }
   #footer{
@@ -590,7 +590,7 @@
   #container .marquee_wrapper .marquee_track img{
     height: 40px;
   }
-  #container .youtube_video{
+  #container .youtube_video video{
     margin: 0 auto 80px;
   }
   #footer{
