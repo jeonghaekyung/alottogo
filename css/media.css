@@ -415,7 +415,7 @@
   }
   #container .main_visual .txt_box>strong{
     font-size: 2.4rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 26px;  
   }
   #container .main_visual .txt_box>p{
@@ -499,7 +499,7 @@
   }
   #container .main_visual .txt_box>strong{
     font-size: 2.8rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 32px;    
   }
   #container .main_visual .txt_box>p{
@@ -641,4 +641,5 @@
   #container .news_area .news_list{
     padding: 0 24px;
   }
+
 }
